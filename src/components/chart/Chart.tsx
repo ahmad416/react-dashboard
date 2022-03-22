@@ -31,6 +31,8 @@ const Chart = ({ aspect, title}: any) => {
                     </defs>
                     <XAxis dataKey='name' stroke='gray'/>
                     <CartesianGrid strokeDasharray='3 3' className='chartGrid'/>
+                    <Tooltip/>
+                    <Area dataKey="Total" type='monotone' stroke='#8884d8' fillOpacity={1} fill='url(#total)'/>
                 </AreaChart>
             </ResponsiveContainer>
         </div>

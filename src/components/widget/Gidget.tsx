@@ -1,4 +1,4 @@
-import './Widget.scss';
+import './Gidget.scss';
 import {
     PersonOutline,
     ShoppingCartOutlined,
@@ -7,7 +7,7 @@ import {
     AccountBalanceWalletOutlined
 } from "@mui/icons-material";
 
-interface Widget {
+interface Gidget {
     title: string;
     isMoney: boolean;
     link: string;
@@ -18,8 +18,8 @@ type WidgetProps  = {
     type: string
 }
 
-const Widget = ({ type }: WidgetProps) => {
-    let data: Widget = {} as Widget;
+const Gidget = ({ type }: WidgetProps) => {
+    let data: Gidget = {} as Gidget;
     const amount = 100;
     const diff = 20;
 
@@ -113,4 +113,4 @@ const Widget = ({ type }: WidgetProps) => {
     )
 }
 
-export default Widget;
+export default Gidget;
